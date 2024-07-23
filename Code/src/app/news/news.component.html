@@ -1,0 +1,22 @@
+<main role="main" class="container">
+    <h1 class="text-center">NEWS</h1>
+    <br>
+    <div *ngFor="let berita of news">
+      <div class="card" id="{{berita.newsid}}">
+        <h4 class="card-header">{{berita.judul}}</h4>
+        <div class="card-body">
+          <p class="card-title">{{berita.sneak}}</p>
+          <a href="{{berita.link}}" target="_blank"><p class="card-text">Want to read more? Click here!</p></a>
+        </div>
+      </div>
+      <br>
+    </div>
+
+    <!-- <div class="card">
+      <h5 class="card-header">Featured</h5>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+    <br> -->

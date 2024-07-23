@@ -1,0 +1,14 @@
+<main role="main" class="container">
+  <h1 class="text-center">BLOGS</h1>
+    <br>
+    <div *ngFor="let baca of blogs">
+      <div class="card" id="{{baca.blogid}}">
+        <h4 class="card-header">{{baca.judul}}</h4>
+        <div class="card-body">
+          <h5 class="card-title">Author : {{baca.author}}</h5>
+          <p class="card-title">{{baca.sneak}}</p>
+          <a href="{{baca.link}}" target="_blank"><p class="card-text">Want to read more? Click here!</p></a>
+        </div>
+      </div>
+      <br>
+    </div>
